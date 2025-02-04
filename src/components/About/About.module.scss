@@ -1,0 +1,137 @@
+.about {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .hero {
+        background-color: #f8f9fa;
+        padding: 100px 0;
+        text-align: center;
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #666;
+        }
+    }
+
+    .missionSection {
+        padding: 80px 0;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+    }
+
+    .valuesSection {
+        padding: 80px 0;
+        background-color: #fff;
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .valuesGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 20px;
+        }
+
+        .valueCard {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #333;
+            }
+
+            p {
+                color: #666;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    .storySection {
+        padding: 80px 0;
+        background-color: #f8f9fa;
+
+        .storyContent {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+
+            .textContent {
+                max-width: 600px;
+
+                h2 {
+                    font-size: 2.5rem;
+                    margin-bottom: 2rem;
+                    color: #333;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    line-height: 1.8;
+                    color: #666;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        .hero {
+            padding: 60px 0;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+
+        .valuesGrid {
+            grid-template-columns: 1fr;
+        }
+
+        .storyContent {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+    }
+}
