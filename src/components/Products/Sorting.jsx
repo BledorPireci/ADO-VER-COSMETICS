@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './Sorting.module.scss';
-import { sortOptions } from '../Data/products';
+import { sortOptions } from '../ProductData/products';
 
 const Sorting = ({ currentSort, onSortChange }) => {
   const [isOpen, setIsOpen] = useState(false);

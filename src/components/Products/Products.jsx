@@ -5,7 +5,7 @@ import styles from './Products.module.scss';
 import ProductCard from './ProductCard';
 import Categories from './Categories';
 import Sorting from './Sorting';
-import { products } from '../data/products';
+import { products } from '../ProductData/products.js';
 
 const Products = () => {
   const location = useLocation();

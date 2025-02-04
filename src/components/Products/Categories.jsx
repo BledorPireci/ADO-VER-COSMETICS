@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './Categories.module.scss';
-import { categories } from '../data/products';
+import { categories } from '../ProductData/products';
 
 const Categories = ({ selectedCategory, onCategoryChange }) => {
   const [isOpen, setIsOpen] = useState(false);
