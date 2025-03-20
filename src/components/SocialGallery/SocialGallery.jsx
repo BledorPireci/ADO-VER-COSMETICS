@@ -1,5 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Keyboard } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import styles from './SocialGallery.module.scss';
 import gallery1 from "../../assets/images/Gallery/gallery1.jpg"
 import gallery2 from "../../assets/images/Gallery/gallery2.jpg"
@@ -9,6 +13,9 @@ import gallery5 from "../../assets/images/Gallery/gallery5.jpg"
 import gallery6 from "../../assets/images/Gallery/gallery6.jpg"
 
 const SocialGallery = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [initialSlide, setInitialSlide] = useState(0);
+
     const photos = [
         {
             image: gallery1,
@@ -92,6 +99,17 @@ const SocialGallery = () => {
           );
     }, []);
 
+    const openModal = (index) => {
+        setInitialSlide(index);
+        setIsModalOpen(true);
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        document.body.style.overflow = 'unset';
+    };
+
     return (
         <section className={styles.socialGallery}>
             <div className={styles.decorativeLine}></div>
@@ -105,7 +123,7 @@ const SocialGallery = () => {
                 </div>
                 <div className={styles.grid}>
                     {photos.map((photo, index) => (
-                        <div key={index} className={styles.gridItem}>
+                        <div key={index} className={styles.gridItem} onClick={() => openModal(index)}>
                             <div className={styles.imageContainer}>
                                 <img 
                                     src={photo.image} 
@@ -129,6 +147,34 @@ const SocialGallery = () => {
                     ))}
                 </div>
             </div>
+
+            {isModalOpen && (
+                <div className={styles.modal} onClick={closeModal}>
+                    <button className={styles.closeButton} onClick={closeModal}>
+                        <span>×</span>
+                    </button>
+                    <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+                        <Swiper
+                            modules={[Navigation, Keyboard]}
+                            navigation
+                            keyboard
+                            initialSlide={initialSlide}
+                            loop={true}
+                            className={styles.swiper}
+                        >
+                            {photos.map((photo, index) => (
+                                <SwiperSlide key={index}>
+                                    <img 
+                                        src={photo.image} 
+                                        alt={photo.title} 
+                                        className={styles.modalImage}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };

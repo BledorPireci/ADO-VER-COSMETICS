@@ -4,8 +4,6 @@ import styles from './HeroSection.module.scss'
 import Gallery1 from "../../assets/images/Gallery/gallery1.jpg"
 import Gallery2 from "../../assets/images/Gallery/gallery2.jpg"
 import Gallery3 from "../../assets/images/Gallery/gallery3.jpg"
-import Product1 from "../../assets/images/Products/product-1.jpg"
-import Product2 from "../../assets/images/Products/product-2.jpg"
 
 const HeroSection = () => {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -14,21 +12,18 @@ const HeroSection = () => {
     const slides = [
         {
             image: Gallery1,
-            productImage: Product1,
             title: "DISCOVER RADIANCE",
             subtitle: "NEW COLLECTION 2024",
             description: "Experience the power of natural beauty"
         },
         {
             image: Gallery2,
-            productImage: Product2,
             title: "TIMELESS BEAUTY",
             subtitle: "LUXURY SKINCARE",
             description: "Transform your skincare routine"
         },
         {
             image: Gallery3,
-            productImage: Product1,
             title: "PURE ELEGANCE",
             subtitle: "PREMIUM CARE",
             description: "Reveal your inner glow"
@@ -36,7 +31,6 @@ const HeroSection = () => {
     ]
 
     useEffect(() => {
-        // Simple fade in animation for initial load
         gsap.fromTo(`.${styles.hero}`,
             { opacity: 0 },
             { 
@@ -46,7 +40,6 @@ const HeroSection = () => {
             }
         );
 
-        // Slideshow logic
         setActiveSlide(0)
         setIsPlaying(true)
         

@@ -72,110 +72,93 @@
 
   .productCard {
     background: #ffffff;
-    border-radius: 20px;
-    padding: 1.5rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    max-width: 320px;
+    max-width: 380px;
     margin: 0 auto;
-    height: 85%;
+    overflow: hidden;
 
     &:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
-
-      .imageWrapper {
-        .glowEffect {
-          opacity: 1;
-        }
-
-        .productImage {
-          transform: translateY(-15px);
-        }
-      }
+      transform: translateY(-6px);
     }
 
     .imageWrapper {
       position: relative;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-
-      .glowEffect {
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(circle at 50% 50%, 
-          rgba(241, 210, 140, 0.2), 
-          rgba(241, 210, 140, 0) 70%);
-        opacity: 0;
-        transition: opacity 0.4s ease;
-      }
+      padding: 0;
+      margin-bottom: 0;
+      width: 100%;
+      aspect-ratio: 1;
 
       .productImage {
         width: 100%;
-        height: auto;
-        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        height: 100%;
+        object-fit: cover;
       }
     }
 
     .productInfo {
+      padding: 2rem;
       text-align: center;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
 
       .productType {
         color: #B8860B;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 0.5rem;
+        letter-spacing: 3px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 0.25rem;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -6px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 20px;
+          height: 1px;
+          background-color: #B8860B;
+          opacity: 0.5;
+        }
       }
 
       .productName {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: #1a1a1a;
-        margin-bottom: 0.8rem;
         font-weight: 400;
-        letter-spacing: 1px;
-      }
-
-      .rating {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
-
-        .stars {
-          color: #F1D28C;
-          letter-spacing: 2px;
-        }
-
-        .ratingNumber {
-          color: #1a1a1a;
-          font-weight: 500;
-        }
-
-        .reviews {
-          color: #666;
-          font-size: 0.9rem;
-        }
+        letter-spacing: 0.5px;
+        line-height: 1.4;
+        margin: 0.75rem 0 0.5rem;
       }
 
       .priceRow {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        margin-top: 0.25rem;
 
         .productPrice {
-          font-size: 1.3rem;
+          font-size: 1rem;
           color: #1a1a1a;
-          font-weight: 300;
+          font-weight: 400;
+          letter-spacing: 0.5px;
 
           &::before {
-            font-size: 1rem;
-            vertical-align: top;
-            margin-right: 0.2rem;
+            font-weight: 400;
+            margin-right: 1px;
           }
         }
+      }
+
+      .rating {
+        display: none;
       }
     }
   }
@@ -247,16 +230,6 @@
 
     .productCard {
       max-width: 280px;
-      
-      .productInfo {
-        .productName {
-          font-size: 1.2rem;
-        }
-        
-        .productPrice {
-          font-size: 1.2rem;
-        }
-      }
     }
     
     .viewAllBtn {
@@ -307,41 +280,27 @@
 
     .productCard {
       max-width: 260px;
-      padding: 1.2rem;
+      padding: 0;
       
       .imageWrapper {
-        padding: 1.2rem;
-        margin-bottom: 1.2rem;
+        padding: 0;
+        margin-bottom: 0;
       }
 
       .productInfo {
+        padding: 1.75rem;
+
         .productType {
-          font-size: 0.8rem;
-          letter-spacing: 1.5px;
+          font-size: 0.7rem;
         }
         
         .productName {
           font-size: 1.1rem;
-          margin-bottom: 0.6rem;
-        }
-        
-        .rating {
-          margin-bottom: 1.2rem;
-          
-          .stars {
-            font-size: 0.9rem;
-          }
-          
-          .reviews {
-            font-size: 0.8rem;
-          }
         }
         
         .priceRow {
-          gap: 0.8rem;
-          
           .productPrice {
-            font-size: 1.1rem;
+            font-size: 1rem;
           }
         }
       }
@@ -386,32 +345,22 @@
 
     .productCard {
       max-width: 240px;
-      padding: 1rem;
+      padding: 0;
       
       .imageWrapper {
-        padding: 1rem;
-        margin-bottom: 1rem;
+        padding: 0;
+        margin-bottom: 0;
       }
       
       .productInfo {
+        padding: 1.5rem;
+
         .productType {
-          font-size: 0.75rem;
+          font-size: 0.7rem;
         }
         
         .productName {
-          font-size: 1rem;
-        }
-        
-        .rating {
-          gap: 0.3rem;
-          
-          .stars {
-            font-size: 0.8rem;
-          }
-          
-          .reviews {
-            font-size: 0.75rem;
-          }
+          font-size: 1.1rem;
         }
         
         .priceRow {

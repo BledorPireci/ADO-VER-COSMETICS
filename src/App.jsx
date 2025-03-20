@@ -8,9 +8,12 @@ import PopularCategories from "./components/PopularCategories/PopularCategories"
 import BestSeller from "./components/BestSellers/BestSeller";
 import Products from "./components/Products/Products";
 import About from "./components/About/About";
+import ScrollToTop from "./components/ScrollToTop";
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header/>
       <Routes>
         <Route path="/" element={

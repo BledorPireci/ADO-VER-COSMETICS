@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './PopularCategories.module.scss';
-import category1 from '../../assets/images/Categories/category1.png';
-import category2 from '../../assets/images/Categories/category2.png';
-import category3 from '../../assets/images/Categories/category3.png';
+import category1 from '../../assets/images/Categories/sprayCategory.PNG';
+import category2 from '../../assets/images/Categories/creamCategory.webp';
+import category3 from '../../assets/images/Categories/oilCategory.webp';
 import { useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
 
@@ -36,30 +36,31 @@ function PopularCategories() {
 
     const categories = [
         {
-            id: 'face-cream',
-            name: 'Face Cream',
-            description: 'Nourishing care for radiant skin',
+            id: 'spray',
+            name: 'Sprays',
+            description: 'Refreshing botanical formulas',
             image: category1,
-            count: '12 Products'
+            count: '7 Products'
         },
         {
-            id: 'hand-cream',
-            name: 'Hand Cream',
-            description: 'Luxurious protection for your hands',
+            id: 'creams',
+            name: 'Creams',
+            description: 'Nourishing and moisturizing skin care',
             image: category2,
-            count: '8 Products'
+            count: '10 Products'
         },
         {
-            id: 'face-oils',
-            name: 'Face Oils',
-            description: 'Natural glow enhancing oils',
+            id: 'oils',
+            name: 'Essential Oils',
+            description: 'Pure natural plant essences',
             image: category3,
-            count: '10 Products'
+            count: '8 Products'
         }
     ];
 
     const handleCategoryClick = (category) => {
         navigate(`/products?category=${category}`);
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -70,7 +71,7 @@ function PopularCategories() {
                     <span className={styles.subtitle}>OUR COLLECTION</span>
                     <h2 className={styles.title}>Popular Categories</h2>
                     <p className={styles.description}>
-                        Discover our carefully curated selection of premium skincare products
+                        Discover our carefully curated selection of premium natural skincare products
                     </p>
                 </div>
                 
@@ -78,30 +79,22 @@ function PopularCategories() {
                     {categories.map((category, index) => (
                         <div 
                             key={category.id}
-                            className={`${styles.categoryCard} ${hoveredCard === index ? styles.hovered : ''}`}
+                            className={styles.categoryCard}
                             onClick={() => handleCategoryClick(category.id)}
-                            onMouseEnter={() => setHoveredCard(index)}
-                            onMouseLeave={() => setHoveredCard(null)}
                         >
                             <div className={styles.imageContainer}>
-                                <div className={styles.glowEffect}></div>
-                                <div className={styles.shimmerEffect}></div>
-                                <img src={category.image} alt={category.name} />
-                                <div className={styles.overlay}>
-                                    <div className={styles.content}>
-                                        <div className={styles.topContent}>
-                                            <span className={styles.productCount}>{category.count}</span>
-                                            <div className={styles.decorativeLine}></div>
-                                        </div>
-                                        <div className={styles.mainContent}>
-                                            <h3>{category.name}</h3>
-                                            <p>{category.description}</p>
-                                            <span className={styles.exploreButton}>
-                                                Explore Collection
-                                                <span className={styles.arrow}>→</span>
-                                            </span>
-                                        </div>
-                                    </div>
+                                <span className={styles.productCount}>{category.count}</span>
+                                <img 
+                                    src={category.image} 
+                                    alt={category.name} 
+                                    className={styles.categoryImage}
+                                />
+                            </div>
+                            <div className={styles.contentOverlay}>
+                                <h3 className={styles.categoryName}>{category.name}</h3>
+                                <p className={styles.categoryDescription}>{category.description}</p>
+                                <div className={styles.exploreLink}>
+                                    Explore Collection <span className={styles.arrow}>→</span>
                                 </div>
                             </div>
                         </div>

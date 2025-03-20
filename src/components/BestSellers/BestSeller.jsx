@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
-import categoryImg from '../../assets/images/Categories/category1.png';
+import product1 from '../../assets/images/Carousel/colagenCream.PNG';
+import product2 from '../../assets/images/Carousel/eucaliptusOil.webp';
+import product3 from '../../assets/images/Carousel/hairlossSpray.PNG';
+import product4 from '../../assets/images/Carousel/handCream.PNG';
+import product5 from '../../assets/images/Carousel/mintOil.webp';
+import product6 from '../../assets/images/Carousel/venoSray.PNG';
+
 import styles from './BestSellers.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom';
 
 const BestSeller = () => {
@@ -15,57 +21,45 @@ const BestSeller = () => {
   const bestSellers = [
     {
       id: 1,
-      image: categoryImg,
-      product: "Face Cream",
-      type: "Anti-Age",
+      image: product1,
+      product: "Bio Collagen Cream",
+      type: "Cream",
       price: 29.99,
-      rating: 4.8,
-      reviews: 124
     },
     {
       id: 2,
-      image: categoryImg,
-      product: "Night Cream",
-      type: "Moisturizing",
+      image: product2,
+      product: "Eucaliptus Oil",
+      type: "Oil",
       price: 34.99,
-      rating: 4.9,
-      reviews: 89
     },
     {
       id: 3,
-      image: categoryImg,
-      product: "Day Cream",
-      type: "UV Protection",
+      image: product3,
+      product: "Hair Loss Spray",
+      type: "Spray",
       price: 24.99,
-      rating: 4.7,
-      reviews: 156
     },
     {
       id: 4,
-      image: categoryImg,
-      product: "Face Serum",
-      type: "Brightening",
+      image: product4,
+      product: "Hand Cream",
+      type: "Cream",
       price: 39.99,
-      rating: 4.9,
-      reviews: 201
     },
     {
       id: 5,
-      image: categoryImg,
-      product: "Hydrating Cream",
-      type: "Brightening",
+      image: product5,
+      product: "Mint Oil",
+      type: "Oil",
       price: 35.99,
-      rating: 4.8,
-      reviews: 167
     },
     {
       id: 6,
-      image: categoryImg,
-      product: "Retinol Serum",
-      type: "Brightening",
+      image: product6,
+      product: "Veno Spray",
+      type: "Spray",
       price: 69.99,
-      rating: 4.9,
-      reviews: 143
     },
   ];
 
@@ -122,68 +116,48 @@ const BestSeller = () => {
             effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={'auto'}
-            initialSlide={1}
-            loop={true}
+            initialSlide={0}
+            loop={false}
             coverflowEffect={{
               rotate: 0,
               stretch: 0,
               depth: 100,
-              modifier: 2,
               slideShadows: false,
             }}
             pagination={{ 
               clickable: true,
-              dynamicBullets: true
+              dynamicBullets: true,
+              type: 'bullets'
             }}
             autoplay={{
-              delay: 3000,
+              delay: 3500,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true
+              pauseOnMouseEnter: true,
+              stopOnLastSlide: true
             }}
             breakpoints={{
               320: {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-                centeredSlides: true,
+                slidesPerView: 1,
+                spaceBetween: 15,
               },
               480: {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-                centeredSlides: true,
-              },
-              575: {
                 slidesPerView: 1.5,
-                spaceBetween: 20,
-                centeredSlides: true,
+                spaceBetween: 25,
               },
-              648: {
-                slidesPerView: 1.7,
-                spaceBetween: 20,
-                centeredSlides: true,
+              576: {
+                slidesPerView: 2.0,
+                spaceBetween: 27,
               },
               768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                centeredSlides: true,
+                slidesPerView: 2.8,
+                spaceBetween: 30,
               },
               1024: {
                 slidesPerView: 3,
-                spaceBetween: 40,
-                centeredSlides: true,
-              },
-              1200: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-                centeredSlides: true,
-              },
-              1440: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-                centeredSlides: false,
+                spaceBetween: 45,
               }
             }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
+            modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
             className="mySwiper"
           >
             {bestSellers.map((item) => (
@@ -196,11 +170,6 @@ const BestSeller = () => {
                   <div className={styles.productInfo}>
                     <p className={styles.productType}>{item.type}</p>
                     <h3 className={styles.productName}>{item.product}</h3>
-                    <div className={styles.rating}>
-                      <span className={styles.stars}>{'★'.repeat(Math.floor(item.rating))}</span>
-                      <span className={styles.ratingNumber}>{item.rating}</span>
-                      <span className={styles.reviews}>({item.reviews})</span>
-                    </div>
                     <div className={styles.priceRow}>
                       <span className={styles.productPrice}>${item.price}</span>
                     </div>

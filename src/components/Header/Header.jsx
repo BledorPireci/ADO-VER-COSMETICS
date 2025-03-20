@@ -72,6 +72,7 @@ const Header = () => {
                             <Link 
                                 to="/" 
                                 className={location.pathname === '/' ? styles.active : ''}
+                                onClick={() => setIsMenuOpen(false)}
                             >
                                 Home
                             </Link>
@@ -80,6 +81,7 @@ const Header = () => {
                             <Link 
                                 to="/products" 
                                 className={location.pathname === '/products' ? styles.active : ''}
+                                onClick={() => setIsMenuOpen(false)}
                             >
                                 Products
                             </Link>
@@ -88,6 +90,7 @@ const Header = () => {
                             <Link 
                                 to="/about" 
                                 className={location.pathname === '/about' ? styles.active : ''}
+                                onClick={() => setIsMenuOpen(false)}
                             >
                                 About
                             </Link>
