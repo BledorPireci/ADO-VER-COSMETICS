@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './PopularCategories.module.scss';
-import category1 from '../../assets/images/Categories/sprayCategory.PNG';
+import category1 from '../../assets/images/Categories/sprayCategory.png';
 import category2 from '../../assets/images/Categories/creamCategory.webp';
 import category3 from '../../assets/images/Categories/oilCategory.webp';
 import { useNavigate } from 'react-router-dom';
