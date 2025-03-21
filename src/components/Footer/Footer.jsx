@@ -9,25 +9,15 @@ const Footer = () => {
         company: {
             title: "Company",
             links: [
-                { name: "About Us", href: "/about" },
-                { name: "Our Story", href: "/" },
-                { name: "Press", href: "/" }
-            ]
-        },
-        support: {
-            title: "Support",
-            links: [
-                { name: "Contact Us", href: "/" },
-                { name: "FAQ", href: "/" },
-                { name: "Returns", href: "/" }
+                { name: "Our Story", href: "/about#story" },
+                { name: "Contact", href: "/contact" }
             ]
         },
         legal: {
             title: "Legal",
             links: [
-                { name: "Privacy Policy", href: "/" },
-                { name: "Terms of Service", href: "/" },
-                { name: "Cookie Policy", href: "/" }
+                { name: "Privacy Policy", href: "/privacy" },
+                { name: "Terms of Service", href: "/terms" }
             ]
         }
     };
@@ -137,6 +127,12 @@ const Footer = () => {
                     </div>
                     <div className={styles.copyright}>
                         <p>&copy; {new Date().getFullYear()} Adover Cosmetics. All rights reserved.</p>
+                        <p>Developed by <a 
+                            href="https://www.bledorpireci.dev" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className={styles.developerLink}
+                        >Bledor Pireci</a></p>
                     </div>
                 </div>
             </div>
