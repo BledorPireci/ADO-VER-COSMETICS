@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
-import product1 from '../../assets/images/Carousel/colagenCream.png';
+import product1 from '../../assets/images/Carousel/colagenCream.webp';
 import product2 from '../../assets/images/Carousel/eucaliptusOil.webp';
-import product3 from '../../assets/images/Carousel/hairlossSpray.png';
-import product4 from '../../assets/images/Carousel/handCream.png';
+import product3 from '../../assets/images/Carousel/hairlossSpray.webp';
+import product4 from '../../assets/images/Carousel/handCream.webp';
 import product5 from '../../assets/images/Carousel/mintOil.webp';
-import product6 from '../../assets/images/Carousel/venoSray.png';
+import product6 from '../../assets/images/Carousel/venoSray.webp';
 
 import styles from './BestSellers.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
