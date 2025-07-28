@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import { gsap } from 'gsap'
 import styles from './HeroSection.module.scss'
 import Gallery1 from "../../assets/images/Gallery/gallery1.jpg"
@@ -12,21 +13,21 @@ const HeroSection = () => {
     const slides = [
         {
             image: Gallery1,
-            title: "DISCOVER RADIANCE",
-            subtitle: "NEW COLLECTION 2024",
-            description: "Experience the power of natural beauty"
+            title: "ZBULO SHKËLQIMIN",
+            subtitle: "KOLEKSIONI I RI 2025",
+            description: "Përjeto fuqinë e bukurisë natyrore"
         },
         {
             image: Gallery2,
-            title: "TIMELESS BEAUTY",
-            subtitle: "LUXURY SKINCARE",
-            description: "Transform your skincare routine"
+            title: "BUKURI E PAKOHË",
+            subtitle: "KUJDES LUKSOZ PËR LËKURËN",
+            description: "Transformo rutinën tënde të kujdesit për lëkurën"
         },
         {
             image: Gallery3,
-            title: "PURE ELEGANCE",
-            subtitle: "PREMIUM CARE",
-            description: "Reveal your inner glow"
+            title: "ELEGANCË E PASTËR",
+            subtitle: "KUJDES PREMIUM",
+            description: "Zbulo shkëlqimin tënd të brendshëm"
         }
     ]
 
@@ -85,7 +86,7 @@ const HeroSection = () => {
                                 <span className={styles.subtitle}>{slide.subtitle}</span>
                                 <h1 className={styles.title}>{slide.title}</h1>
                                 <p className={styles.description}>{slide.description}</p>
-                                <button className={styles.cta}>Discover More</button>
+                                <Link to="/products" className={styles.cta}>Zbulo Më Shumë</Link>
                             </div>
                         </div>
                     </div>
@@ -117,7 +118,7 @@ const HeroSection = () => {
             </div>
 
             <div className={`${styles.scrollPrompt} ${styles.hideOnMobile}`}>
-                <span>Scroll</span>
+                <span>Lëviz</span>
                 <div className={styles.scrollLine}>
                     <div 
                         className={styles.scrollDot} 

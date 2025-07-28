@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './PopularCategories.module.scss';
-import category1 from '../../assets/images/Categories/sprayCategory.webp';
-import category2 from '../../assets/images/Categories/creamCategory.webp';
-import category3 from '../../assets/images/Categories/oilCategory.webp';
+import sprayCategory from '../../assets/images/Categories/sprayCategory.webp';
+import creamCategory from '../../assets/images/Categories/creamCategory.webp';
+import oilCategory from '../../assets/images/Categories/oilCategory.webp';
 import { useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
 
@@ -36,25 +36,25 @@ function PopularCategories() {
 
     const categories = [
         {
-            id: 'spray',
-            name: 'Sprays',
-            description: 'Refreshing botanical formulas',
-            image: category1,
-            count: '7 Products'
+            id: 'Kremrat',
+            name: 'Kremrat',
+            description: 'Kremra natyralë për kujdesin e lëkurës',
+            image: creamCategory,
+            count: '10 produkte'
         },
         {
-            id: 'creams',
-            name: 'Creams',
-            description: 'Nourishing and moisturizing skin care',
-            image: category2,
-            count: '10 Products'
+            id: 'Vajrat',
+            name: 'Vajrat',
+            description: 'Vajra esencialë të pastër natyralë',
+            image: oilCategory,
+            count: '8 produkte'
         },
         {
-            id: 'oils',
-            name: 'Essential Oils',
-            description: 'Pure natural plant essences',
-            image: category3,
-            count: '8 Products'
+            id: 'Sprej',
+            name: 'Sprej',
+            description: 'Sprej natyralë për përdorime të ndryshme',
+            image: sprayCategory,
+            count: '7 produkte'
         }
     ];
 
@@ -68,10 +68,10 @@ function PopularCategories() {
             <div className={styles.decorativeLine}></div>
             <div className={styles.container}>
                 <div className={styles.sectionHeader}>
-                    <span className={styles.subtitle}>OUR COLLECTION</span>
-                    <h2 className={styles.title}>Popular Categories</h2>
+                    <span className={styles.subtitle}>KOLEKSIONI YNË</span>
+                    <h2 className={styles.title}>Kategoritë Popullore</h2>
                     <p className={styles.description}>
-                        Discover our carefully curated selection of premium natural skincare products
+                        Zbuloni përzgjedhjen tonë të kujdesshme të produkteve natyrale të kujdesit për lëkurën
                     </p>
                 </div>
                 
@@ -94,7 +94,7 @@ function PopularCategories() {
                                 <h3 className={styles.categoryName}>{category.name}</h3>
                                 <p className={styles.categoryDescription}>{category.description}</p>
                                 <div className={styles.exploreLink}>
-                                    Explore Collection <span className={styles.arrow}>→</span>
+                                    Shiko Koleksionin <span className={styles.arrow}>→</span>
                                 </div>
                             </div>
                         </div>

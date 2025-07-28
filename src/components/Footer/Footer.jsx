@@ -7,17 +7,17 @@ import pattern from "../../assets/images/PATTERN-PNG-WHITE.png";
 const Footer = () => {
     const footerLinks = {
         company: {
-            title: "Company",
+            title: "Kompania",
             links: [
-                { name: "Our Story", href: "/about#story" },
-                { name: "Contact", href: "/contact" }
+                { name: "Historia Jonë", href: "/about#story" },
+                { name: "Kontakti", href: "/contact" }
             ]
         },
         legal: {
-            title: "Legal",
+            title: "Ligjore",
             links: [
-                { name: "Privacy Policy", href: "/privacy" },
-                { name: "Terms of Service", href: "/terms" }
+                { name: "Politika e Privatësisë", href: "/privacy" },
+                { name: "Kushtet e Shërbimit", href: "/terms" }
             ]
         }
     };
@@ -126,8 +126,8 @@ const Footer = () => {
                         ))}
                     </div>
                     <div className={styles.copyright}>
-                        <p>&copy; {new Date().getFullYear()} Adover Cosmetics. All rights reserved.</p>
-                        <p>Developed by <a 
+                        <p>&copy; {new Date().getFullYear()} Adover Cosmetics. Të gjitha të drejtat e rezervuara.</p>
+                        <p>Zhvilluar nga <a 
                             href="https://www.bledorpireci.dev" 
                             target="_blank" 
                             rel="noopener noreferrer"

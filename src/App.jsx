@@ -10,6 +10,8 @@ import Products from "./components/Products/Products";
 import About from "./components/About/About";
 import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./components/About/Contact";
+import Privacy from './components/Privacy/Privacy';
+import Terms from './components/TermsOfService/Terms'
 function App() {
   return (
     <Router>
@@ -27,6 +29,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={ <Privacy />} />
+        <Route path="/terms" element={ <Terms />} />
       </Routes>
       <Footer/>
     </Router>

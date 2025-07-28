@@ -45,16 +45,16 @@ const Contact = () => {
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
                     <span className={styles.preTitle}>Connect With Us</span>
-                    <h1>Join Our Beauty Community</h1>
-                    <p className={styles.subtitle}>Follow us for beauty tips, product updates, and more</p>
+                    <h1>Bashkohuni me Komunitetin tonë të Bukurisë</h1>
+                    <p className={styles.subtitle}>Na ndiqni për këshilla bukurie, lajme produktesh dhe më shumë</p>
                 </div>
             </section>
 
             <section className={styles.contactInfoSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
-                        <h2>Get in Touch</h2>
-                        <p>Have questions? We'd love to hear from you.</p>
+                        <h2>Na Kontaktoni</h2>
+                        <p>Keni pyetje? Do të na pëlqente të dëgjonim nga ju.</p>
                     </div>
                     <div className={styles.contactGrid}>
                         <div className={styles.contactItem}>
@@ -64,9 +64,9 @@ const Contact = () => {
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                             </div>
-                            <h3>Our Address</h3>
-                            <p>123 Beauty Street</p>
-                            <p>Los Angeles, CA 90001</p>
+                            <h3>Adresa</h3>
+                            <p>Shuaip Spahiu</p>
+                            <p>Prizren, Kosove</p>
                         </div>
 
                         <div className={styles.contactItem}>
@@ -75,8 +75,8 @@ const Contact = () => {
                                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
                             </div>
-                            <h3>Phone</h3>
-                            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                            <h3>Telefoni</h3>
+                            <p><a href="tel:+38344809411">+383 44 809 411</a></p>
                         </div>
 
                         <div className={styles.contactItem}>
@@ -87,7 +87,7 @@ const Contact = () => {
                                 </svg>
                             </div>
                             <h3>Email</h3>
-                            <p><a href="mailto:hello@adovercosmetics.com">hello@adovercosmetics.com</a></p>
+                            <p><a href="mailto:adovercosmetics@gmail.com">adovercosmetics@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -96,8 +96,8 @@ const Contact = () => {
             <section className={styles.socialSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
-                        <h2>Follow Our Journey</h2>
-                        <p>Stay connected with us on social media</p>
+                        <h2>Na Ndiqni në Rrugëtimin Tonë</h2>
+                        <p>Qëndroni të lidhur me ne në rrjetet sociale</p>
                     </div>
                     <div className={styles.socialGrid}>
                         <div className={styles.socialCard}>

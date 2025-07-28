@@ -74,7 +74,7 @@ const Header = () => {
                                 className={location.pathname === '/' ? styles.active : ''}
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                Home
+                                Kreu
                             </Link>
                         </li>
                         <li>
@@ -83,7 +83,7 @@ const Header = () => {
                                 className={location.pathname === '/products' ? styles.active : ''}
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                Products
+                                Produktet
                             </Link>
                         </li>
                         <li>
@@ -92,7 +92,7 @@ const Header = () => {
                                 className={location.pathname === '/about' ? styles.active : ''}
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                About
+                                Rreth Nesh
                             </Link>
                         </li>
                     </ul>

@@ -19,39 +19,39 @@ const SocialGallery = () => {
     const photos = [
         {
             image: gallery1,
-            title: "Natural Beauty",
-            description: "Discover the power of natural ingredients",
-            category: "Skincare"
+            title: "Bukuri Natyrale",
+            description: "Zbuloni fuqinë e përbërësve natyralë",
+            category: "Kujdes Lëkure"
         },
         {
             image: gallery2,
-            title: "Pure Elegance",
-            description: "Luxury skincare for radiant results",
-            category: "Treatment"
+            title: "Elegancë e Pastër",
+            description: "Kujdes luksoz për rezultate rrezatuese",
+            category: "Trajtim"
         },
         {
             image: gallery3,
-            title: "Timeless Care",
-            description: "Advanced anti-aging solutions",
-            category: "Anti-Age"
+            title: "Kujdes i Pakohë",
+            description: "Zgjidhje të avancuara kundër plakjes",
+            category: "Anti-Moshë"
         },
         {
             image: gallery4,
-            title: "Gentle Touch",
-            description: "Nourishing care for sensitive skin",
-            category: "Sensitive"
+            title: "Prekje e Butë",
+            description: "Kujdes ushqyes për lëkurë të ndjeshme",
+            category: "E Ndjeshme"
         },
         {
             image: gallery5,
-            title: "Radiant Glow",
-            description: "Illuminate your natural beauty",
-            category: "Brightening"
+            title: "Shkëlqim Rrezatues",
+            description: "Ndriçoni bukurinë tuaj natyrale",
+            category: "Ndriçues"
         },
         {
             image: gallery6,
-            title: "Deep Hydration",
-            description: "Intensive moisture therapy",
-            category: "Hydration"
+            title: "Hidratim i Thellë",
+            description: "Terapia intensive e lagështisë",
+            category: "Hidratim"
         }
     ];
 
@@ -115,10 +115,10 @@ const SocialGallery = () => {
             <div className={styles.decorativeLine}></div>
             <div className={styles.container}>
                 <div className={styles.sectionHeader}>
-                    <span className={styles.subtitle}>OUR GALLERY</span>
-                    <h2 className={styles.title}>Beauty in Every Detail</h2>
+                    <span className={styles.subtitle}>GALERIA JONË</span>
+                    <h2 className={styles.title}>Bukuri në Çdo Detaj</h2>
                     <p className={styles.description}>
-                    Experience the artistry of premium skincare through our curated collection
+                    Përjetoni artin e kujdesit premium për lëkurën përmes koleksionit tonë të kuruar
                     </p>
                 </div>
                 <div className={styles.grid}>
@@ -137,7 +137,7 @@ const SocialGallery = () => {
                                         <h3>{photo.title}</h3>
                                         <p>{photo.description}</p>
                                         <button className={styles.exploreButton}>
-                                            Discover More
+                                            Zbulo Më Shumë
                                             <span className={styles.arrow}>→</span>
                                         </button>
                                     </div>

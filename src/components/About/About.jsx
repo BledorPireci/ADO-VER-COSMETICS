@@ -51,7 +51,7 @@ const About = () => {
             setTimeout(() => {
                 const storySection = storyRef.current;
                 if (storySection) {
-                    const headerOffset = 80; // Adjust this value based on your header height
+                    const headerOffset = 80; 
                     const elementPosition = storySection.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -74,10 +74,10 @@ const About = () => {
                 <div className={styles.heroContent}>
                     <div className={styles.textWrapper}>
                         <span className={styles.preTitle}>Est. 2020</span>
-                        <h1>The Art of Natural Beauty</h1>
+                        <h1>Arti i Bukurisë Natyrale</h1>
                         <div className={styles.subtitleWrapper}>
                             <span className={styles.line}></span>
-                            <p className={styles.subtitle}>Crafting Premium Skincare Solutions</p>
+                            <p className={styles.subtitle}>Krijimi i zgjidhjeve premium për kujdesin e lëkurës</p>
                             <span className={styles.line}></span>
                         </div>
                     </div>
@@ -88,13 +88,13 @@ const About = () => {
                 <div className={styles.container}>
                     <div className={styles.missionContent}>
                         <div className={styles.missionText}>
-                            <span className={styles.sectionLabel}>Our Purpose</span>
-                            <h2>Our Mission</h2>
+                            <span className={styles.sectionLabel}>Qëllimi Ynë</span>
+                            <h2>Misioni Ynë</h2>
                             <div className={styles.separator}></div>
                             <p>
-                                We believe in the power of natural ingredients and their ability to transform your skin. 
-                                Our mission is to provide premium skincare solutions that enhance your natural beauty 
-                                while maintaining the highest standards of quality and sustainability.
+                                Ne besojmë në fuqinë e përbërësve natyralë dhe aftësinë e tyre për të transformuar lëkurën tuaj.
+                                Misioni ynë është të ofrojmë zgjidhje premium për kujdesin e lëkurës që theksojnë bukurinë tuaj natyrale,
+                                duke ruajtur standardet më të larta të cilësisë dhe qëndrueshmërisë.
                             </p>
                         </div>
                         <div className={styles.missionImage}>
@@ -106,25 +106,25 @@ const About = () => {
 
             <section className={styles.valuesSection}>
                 <div className={styles.container}>
-                    <span className={styles.sectionLabel}>What We Stand For</span>
-                    <h2>Our Values</h2>
+                    <span className={styles.sectionLabel}>Për Çfarë Qëndrojmë</span>
+                    <h2>Vlerat Tona</h2>
                     <div className={styles.separator}></div>
                     <div className={styles.valuesGrid}>
                         <div className={styles.valueCard}>
-                            <h3>Natural Ingredients</h3>
-                            <p>We source the finest natural ingredients to create effective skincare solutions.</p>
+                            <h3>Përbërës Natyralë</h3>
+                            <p>Përdorim përbërësit më të mirë natyralë për të krijuar zgjidhje efektive për kujdesin e lëkurës.</p>
                         </div>
                         <div className={styles.valueCard}>
-                            <h3>Sustainability</h3>
-                            <p>Our commitment to the environment guides every decision we make.</p>
+                            <h3>Qëndrueshmëri</h3>
+                            <p>Përkushtimi ynë ndaj mjedisit udhëheq çdo vendim që marrim.</p>
                         </div>
                         <div className={styles.valueCard}>
-                            <h3>Quality</h3>
-                            <p>We never compromise on quality, ensuring the best results for your skin.</p>
+                            <h3>Cilësi</h3>
+                            <p>Nuk bëjmë kurrë kompromis me cilësinë, duke siguruar rezultatet më të mira për lëkurën tuaj.</p>
                         </div>
                         <div className={styles.valueCard}>
-                            <h3>Innovation</h3>
-                            <p>Constantly researching and developing new formulations for better results.</p>
+                            <h3>Inovacion</h3>
+                            <p>Kërkojmë dhe zhvillojmë vazhdimisht formula të reja për rezultate më të mira.</p>
                         </div>
                     </div>
                 </div>
@@ -142,31 +142,30 @@ const About = () => {
                             <div className={styles.imageAccent}></div>
                         </div>
                         <div className={styles.textContent}>
-                            <span className={styles.sectionLabel}>Our Journey</span>
-                            <h2>Our Story</h2>
+                            <span className={styles.sectionLabel}>Rruga Jonë</span>
+                            <h2>Historia Jonë</h2>
                             <div className={styles.separator}></div>
                             <p>
-                                Founded in 2020, our journey began with a simple belief: skincare should be 
-                                effective, natural, and accessible to everyone. What started as a small 
-                                collection of handcrafted formulas has grown into a comprehensive range of 
-                                premium skincare products.
+                                E themeluar në vitin 2020, rruga jonë filloi me një besim të thjeshtë: kujdesi për lëkurën duhet të jetë
+                                efektiv, natyral dhe i arritshëm për të gjithë. Ajo që filloi si një koleksion i vogël formulash të punuara me dorë
+                                është shndërruar në një gamë të plotë produktesh premium për kujdesin e lëkurës.
                             </p>
                             <p>
-                                Today, we continue to innovate and expand our offerings, always staying true 
-                                to our core values of quality, sustainability, and customer satisfaction.
+                                Sot, ne vazhdojmë të inovojmë dhe të zgjerojmë ofertat tona, gjithmonë duke qëndruar besnikë vlerave tona thelbësore:
+                                cilësi, qëndrueshmëri dhe kënaqësi të klientit.
                             </p>
                             <div className={styles.yearStats}>
                                 <div className={styles.stat}>
                                     <span>2020</span>
-                                    <p>Founded</p>
+                                    <p>Themeluar</p>
                                 </div>
                                 <div className={styles.stat}>
                                     <span>100%</span>
-                                    <p>Natural</p>
+                                    <p>Natyrale</p>
                                 </div>
                                 <div className={styles.stat}>
                                     <span>25+</span>
-                                    <p>Products</p>
+                                    <p>Produkte</p>
                                 </div>
                             </div>
                         </div>

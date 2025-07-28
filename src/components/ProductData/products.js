@@ -37,298 +37,286 @@ import creamWort from '../../assets/images/Products/cream/cream-wort.webp';
 export const products = [
   {
     id: 1,
-    name: "Cream Anti Acne ",
-    category: "creams",
-    price: 24.99,
+    name: "Krem kundër akneve",
+    category: "Kremrat",
+    price: 4.99,
     image: creamAntiAcneP,
-    description: "Cream for acne prevention and skin clearing",
-    ingredients: ["Salicylic Acid", "Tea Tree Oil", "Aloe Vera"]
+    description: "Krem për parandalimin e akneve dhe pastrimin e lëkurës",
+    ingredients: ["Acidi Salicilik", "Shea Butter", "Cera Alba"]
   },
   {
     id: 2,
-    name: "Cream Anti Acne",
-    category: "creams",
-    price: 19.99,
+    name: "Krem kundër akneve",
+    category: "Kremrat",
+    price: 14.99,
     image: creamAntiAcne,
-    description: "Cream for acne treatment and skin soothing",
-    ingredients: ["Benzoyl Peroxide", "Aloe Vera", "Vitamin E"]
+    description: "Krem për trajtimin e akneve dhe qetësimin e lëkurës",
+    ingredients: ["Acidi Salicilik", "Shea Butter", "Cera Alba"]
   },
   {
     id: 3,
-    name: "Cream Anti Aging ",
-    category: "creams",
-    price: 29.99,
+    name: "Krem kundër plakjes",
+    category: "Kremrat",
+    price: 4.99,
     image: creamAntiAgingP,
-    description: "Cream for anti-aging and skin rejuvenation",
-    ingredients: ["Retinol", "Hyaluronic Acid", "Vitamin C"]
+    description: "Krem kundër plakjes dhe rigjenerimit të lëkurës",
+    ingredients: ["Vaj Kokosi", "Cetaryl Alkoholi", "Cetaceum"]
   },
   {
     id: 4,
-    name: "Cream Anti Aging",
-    category: "creams",
-    price: 24.99,
+    name: "Krem kundër plakjes",
+    category: "Kremrat",
+    price: 14.99,
     image: creamAntiAging,
-    description: "Cream for anti-aging and skin firming",
-    ingredients: ["Peptides", "Hyaluronic Acid", "Glycerin"]
+    description: "Krem kundër plakjes dhe forcimit të lëkurës",
+    ingredients: ["Vaj Kokosi", "Cetaryl Alkoholi", "Cetaceum"]
   },
   {
     id: 5,
-    name: "Cream Bio Colagen",
-    category: "creams",
-    price: 34.99,
+    name: "Krem bio kolagjen",
+    category: "Kremrat",
+    price: 4.99,
     image: creamBioColagen,
-    description: "Cream for collagen production and skin elasticity",
-    ingredients: ["Collagen Peptides", "Hyaluronic Acid", "Vitamin E"]
+    description: "Krem për prodhimin e kolagjenit dhe elasticitetin e lëkurës",
+    ingredients: ["Kolagjen", "Shea Butter", "Retinol"]
   },
   {
     id: 6,
-    name: "Cream Dark Spot",
-    category: "creams",
-    price: 29.99,
+    name: "Krem bar pezmi",
+    category: "Kremrat",
+    price: 4.99,
     image: creamDarkSpot,
-    description: "Cream for dark spot correction and skin brightening",
-    ingredients: ["Niacinamide", "Vitamin C", "Licorice Extract"]
+    description: "Krem për korrigjimin e njollave të errëta dhe ndriçimin e lëkurës",
   },
   {
     id: 7,
-    name: "Cream External Hemorroide",
-    category: "creams",
-    price: 19.99,
+    name: "Krem për hemorroide të jashtme",
+    category: "Kremrat",
+    price: 4.99,
     image: creamExternalHemorroide,
-    description: "Cream for external hemorrhoid relief",
-    ingredients: ["Witch Hazel", "Aloe Vera", "Tea Tree Oil"]
+    description: "Krem për lehtësimin e hemorroideve të jashtme",
+    ingredients: ["Kamomil", "Kalandula", "Dyll i Bletës"]
   },
   {
     id: 8,
-    name: "Cream Hand",
-    category: "creams",
-    price: 14.99,
+    name: "Krem për duar",
+    category: "Kremrat",
+    price: 4.99,
     image: creamHand,
-    description: "Moisturizing cream for dry hands",
-    ingredients: ["Shea Butter", "Coconut Oil", "Vitamin E"]
+    description: "Krem hidratues për duar të thata",
+    ingredients: ["Arome Dredhze", "Glicerin", "Teqpolimer Velvet"]
   },
   {
     id: 9,
-    name: "Cream Internal Hemorroide",
-    category: "creams",
-    price: 24.99,
+    name: "Krem për hemorroide të brendshme",
+    category: "Kremrat",
+    price: 4.99,
     image: creamInternalHemorroide,
-    description: "Cream for internal hemorrhoid relief",
-    ingredients: ["Witch Hazel", "Aloe Vera", "Horse Chestnut"]
+    description: "Krem për lehtësimin e hemorroideve të brendshme",
+    ingredients: ["Kantarion", "Bar Pezmi", "Kamomil"]
   },
   {
     id: 10,
-    name: "Cream Wort",
-    category: "creams",
-    price: 19.99,
+    name: "Krem Kantarion",
+    category: "Kremrat",
+    price: 7.99,
     image: creamWort,
-    description: "Cream for skin hydration and moisturizing",
-    ingredients: ["Wort Oil", "Aloe Vera", "Glycerin"]
+    description: "Krem për hidratimin dhe lagështimin e lëkurës",
+    ingredients: ["Cera Alba", "Vaj Kantarion", "Vaj Kokosi"]
   },
   {
     id: 11,
-    name: "Vaj Chamomile Lips",
-    category: "oils",
-    price: 14.99,
+    name: "Vaj Kamomili për buzë",
+    category: "Vajrat",
+    price: 7.99,
     image: vajChamomileLips,
-    description: "Soothing lip balm for dry lips",
-    ingredients: ["Chamomile Oil", "Beeswax", "Coconut Oil"]
+    description: "Balsam qetësues për buzë të thata",
+    ingredients: ["Vaj Kamomili", "Vaj Argan", "Vaj Bademi"]
   },
   {
     id: 12,
-    name: "Vaj Immortelle",
-    category: "oils",
-    price: 39.99,
+    name: "Vaj kundër plakjes",
+    category: "Vajrat",
+    price: 7.99,
     image: vajImmortelle,
-    description: "Face oil for anti-aging and skin rejuvenation",
-    ingredients: ["Immortelle Oil", "Jojoba Oil", "Vitamin E"]
+    description: "Vaj fytyre kundër plakjes dhe rigjenerimit të lëkurës",
+    ingredients: ["Vaj Akja", "Vaj Argani", "Vaj Kungulli"]
   },
   {
     id: 13,
     name: "Vaj Karafili",
-    category: "oils",
-    price: 24.99,
+    category: "Vajrat",
+    price: 4.99,
     image: vajKarafili,
-    description: "Moisturizing face cream for all skin types",
-    ingredients: ["Karafili Extract", "Shea Butter", "Glycerin"]
+    description: "Ushqen lëkurën, lufton aknet dhe likenin.",
+    ingredients: ["Lule Karafili", "Vaj Ulliri"]
   },
   {
     id: 14,
-    name: "Vaj Kumakut",
-    category: "oils",
-    price: 12.99,
+    name: "Vaj Kumaku",
+    category: "Vajrat",
+    price: 4.99,
     image: vajKumakut,
-    description: "Nourishing hand cream for dry hands",
-    ingredients: ["Kumakut Oil", "Coconut Oil", "Beeswax"]
+    description: "Krem ushqyes për duar të thata",
+    ingredients: ["Lule Kumaku", "Vaj Ulliri"]
   },
   {
     id: 15,
     name: "Vaj Nenexhiku",
-    category: "oils",
-    price: 34.99,
+    category: "Vajrat",
+    price: 4.99,
     image: vajNenexhiku,
-    description: "Face oil for stress relief and relaxation",
-    ingredients: ["Nenexhiku Oil", "Argan Oil", "Lavender Oil"]
+    description: "Ndalon rënien e flokëve, forcon rrënjët.",
+    ingredients: ["Lule Nenexhiku", "Vaj Ulliri"]
   },
   {
     id: 16,
-    name: "Vaj Sherebeles",
-    category: "oils",
-    price: 10.99,
+    name: "Vaj Sherebele",
+    category: "Vajrat",
+    price: 4.99,
     image: vajSherebeles,
-    description: "Lip balm for chapped lips",
-    ingredients: ["Sherebeles Oil", "Beeswax", "Vitamin E"]
-  },
-  {
-    id: 17,
-    name: "Vaj Wort",
-    category: "oils",
-    price: 14.99,
-    image: vajWort,
-    description: "Moisturizing hand cream for dry skin",
-    ingredients: ["Wort Oil", "Shea Butter", "Glycerin"]
+    description: "Stimulon rritjen, parandalon rrudhat dhe zbokthin.",
+    ingredients: ["Lule Sherebele", "Vaj Ulliri"]
   },
   {
     id: 18,
     name: "Vaj Eukalipti",
-    category: "oils",
-    price: 39.99,
+    category: "Vajrat",
+    price: 4.99,
     image: vajEukalipti,
-    description: "Face oil for anti-aging and skin rejuvenation",
-    ingredients: ["Eukalipti Oil", "Jojoba Oil", "Vitamin E"]
+    description: "Mbron kundër infeksioneve dhe irritimeve.",
+    ingredients: ["Gjethe Eukalipti", "Vaj Ulliri"]
   },
   {
     id: 19,
-    name: "Spray Hair Loss",
-    category: "spray",
-    price: 29.99,
+    name: "Sprej kundër rënies së flokëve",
+    category: "Sprej",
+    price: 7.99,
     image: sprayHairLoss,
-    description: "Spray for hair loss prevention and growth",
-    ingredients: ["Biotin", "Keratin", "Vitamin B"]
+    description: "Spray për parandalimin e rënies së flokëve dhe rritjen e tyre",
+    ingredients: ["Hither", "Lule Sherebele", "Podiqja e Egër"]
   },
   {
     id: 20,
-    name: "Spray Hair Loss Men",
-    category: "spray",
-    price: 29.99,
+    name: "Sprej kundër rënies së flokëve për meshkuj",
+    category: "Sprej",
+    price: 7.99,
     image: sprayHairLossMen,
-    description: "Spray for hair loss prevention and growth for men",
-    ingredients: ["Biotin", "Keratin", "Vitamin B"]
+    description: "Sprej për parandalimin e rënies së flokëve dhe rritjen e tyre për meshkuj",
+    ingredients: ["Hither", "Lule Sherebele", "Podiqja e Egër"]
   },
   {
     id: 21,
-    name: "Spray Lotion",
-    category: "spray",
-    price: 19.99,
+    name: "Sprej për kujdes intim",
+    category: "Sprej",
+    price: 4.99,
     image: sprayLotion,
-    description: "Moisturizing spray lotion for dry skin",
-    ingredients: ["Aloe Vera", "Coconut Oil", "Glycerin"]
+    description: "Sprej losion hidratues për lëkurë të thatë",
+    ingredients: ["Acid Salicilik", "Alantoin", "D-Pantenol"]
   },
   {
     id: 22,
-    name: "Spray Muscles",
-    category: "spray",
-    price: 24.99,
+    name: "Sprej për dhimbjet e muskujve dhe kyçeve",
+    category: "Sprej",
+    price: 4.99,
     image: sprayMuscles,
-    description: "Spray for muscle relaxation and pain relief",
-    ingredients: ["Arnica Oil", "Peppermint Oil", "Eucalyptus Oil"]
+    description: "Sprej për relaksimin e muskujve dhe lehtësimin e dhimbjeve",
+    ingredients: ["Lule Karafili", "Xhenxhefil", "Lule Mente"]
   },
   {
     id: 23,
-    name: "Spray Sun Tan",
-    category: "spray",
-    price: 14.99,
+    name: "Sprej për nxirje nga dielli",
+    category: "Sprej",
+    price: 7.99,
     image: spraySunTan,
-    description: "Spray for sunless tanning and skin hydration",
-    ingredients: ["DHA", "Aloe Vera", "Glycerin"]
+    description: "Sprej për nxirje pa diell dhe hidratim të lëkurës",
+    ingredients: ["Vaj Karrote", "Vaj Arre", "Vaj Argani"]
   },
   {
     id: 24,
-    name: "Spray Veno",
-    category: "spray",
-    price: 29.99,
+    name: "Sprej për shëndetin e venave",
+    category: "Sprej",
+    price: 4.99,
     image: sprayVeno,
-    description: "Spray for vein health and circulation improvement",
-    ingredients: ["Horse Chestnut", "Ginkgo Biloba", "Vitamin C"]
+    description: "Sprej për shëndetin e venave dhe përmirësimin e qarkullimit",
+    ingredients: ["Gështenjë e Egër", "Gjethe Eukaliptus", "Kalandula"]
   },
   {
     id: 25,
-    name: "Spray Wort",
-    category: "spray",
-    price: 19.99,
+    name: "Vaj Kamomili", 
+    category: "Vajrat",
+    price: 7.99,
     image: sprayWort,
-    description: "Spray for skin hydration and moisturizing",
-    ingredients: ["Wort Oil", "Aloe Vera", "Glycerin"]
+    description: "Sprej vaji për hidratimin dhe lagështimin e lëkurës",
+    ingredients: ["Lule Kamomili", "Vaj Ulliri"]
   },
   {
     id: 26,
-    name: "Tincture of Eucalyptus",
-    category: "tinctures",
-    price: 29.99,
+    name: "Tinktura e Eukaliptit",
+    category: "Tinkturat",
+    price: 4.99,
     image: tinktureEukalipti,
-    description: "Natural tincture for respiratory health",
-    ingredients: ["Eucalyptus Leaves", "Alcohol", "Water"] 
+    description: "Tinkture natyrale për shëndetin e rrugëve të frymëmarrjes",
+    ingredients: ["Gjethe Eukalipti", "Alkool Medicinal"] 
   },
   {
     id: 27,
-    name: "Tincture of Hithres",
-    category: "tinctures",
-    price: 19.99,
+    name: "Tinktura e Hithrës",
+    category: "Tinkturat",
+    price: 4.99,
     image: tinktureHithres,
-    description: "Tincture for digestive health",
-    ingredients: ["Hithres Root", "Alcohol", "Water"]
+    description: "Kundër rënies së flokëve dhe puçrrave.",
+    ingredients: ["Gjethe Hithre", "Alkool Medicinal"]
   },
   {
     id: 28,
-    name: "Tincture of Karafil",
-    category: "tinctures",
-    price: 29.99,
+    name: "Tinktura e Karafilit",
+    category: "Tinkturat",
+    price: 4.99,
     image: tinktureKarafil,
-    description: "Tincture for immune system support",
-    ingredients: ["Karafil Fruit", "Alcohol", "Water"]
+    description: "Ushqen lëkurën, lufton aknet dhe likenin.",
+    ingredients: ["Lule Karafili", "Alkool Medicinal"]
   },
   {
     id: 29,
-    name: "Tincture of Kumakut",
-    category: "tinctures",
-    price: 29.99,
+    name: "Tinktura e Kumakut",
+    category: "Tinkturat",
+    price: 4.99,
     image: tinktureKumakut,
-    description: "Tincture for skin health",
-    ingredients: ["Kumakut Leaves", "Alcohol", "Water"]
+    description: "Tinkture për shëndetin e lëkurës",
+    ingredients: ["Lule Kumaku", "Alkool Medicinal"]
   },
   {
     id: 30,
-    name: "Tincture of Nenexhiku",
-    category: "tinctures",
-    price: 29.99,
+    name: "Tinktura e Nenexhikut",
+    category: "Tinkturat",
+    price: 4.99,
     image: tinktureNenexhiku,
-    description: "Tincture for stress relief",
-    ingredients: ["Nenexhiku Flowers", "Alcohol", "Water"]
+    description: "Freskon, pastron dhe qetëson lëkurën.",
+    ingredients: ["Lule Nenexhiku", "Alkool Medicinal"]
   },
   {
     id: 31,
-    name: "Tincture of Sherebeles",
-    category: "tinctures",
-    price: 29.99,
+    name: "Tinktura e Sherebelës",
+    category: "Tinkturat",
+    price: 4.99,
     image: tinktureSherebeles,
-    description: "Tincture for cardiovascular health",
-    ingredients: ["Sherebeles Berries", "Alcohol", "Water"]
+    description: "Pastron lëkurën, parandalon puçrrat dhe skuqjet.",
+    ingredients: ["Lule Sherebele", "Alkool Medicinal"]
   },
 ];
 
 
 export const categories = [
-  { id: 'all', name: 'All Products' },
-  { id: 'creams', name: 'Creams' },
-  { id: 'oils', name: 'Essential Oils' },
-  { id: 'spray', name: 'Sprays' },
-  { id: 'tinctures', name: 'Tinctures' },
+  { id: 'all', name: 'Të gjitha' },
+  { id: 'Kremrat', name: 'Kremrat' },
+  { id: 'Vajrat', name: 'Vajrat' },
+  { id: 'Sprej', name: 'Sprej' },
+  { id: 'Tinkturat', name: 'Tinkturat' },
 ];
 
 export const sortOptions = [
-  { value: 'default', label: 'Default sorting' },
-  { value: 'price-low', label: 'Price: Low to High' },
-  { value: 'price-high', label: 'Price: High to Low' },
-  { value: 'name-asc', label: 'Name: A to Z' },
-  { value: 'name-desc', label: 'Name: Z to A' },
+  { value: 'default', label: 'Renditja' },
+  { value: 'price-low', label: 'Çmimi: Ulët-Lartë' },
+  { value: 'price-high', label: 'Çmimi: Lartë-Ulët' },
 ];

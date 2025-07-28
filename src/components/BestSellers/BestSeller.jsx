@@ -22,44 +22,44 @@ const BestSeller = () => {
     {
       id: 1,
       image: product1,
-      product: "Bio Collagen Cream",
-      type: "Cream",
-      price: 29.99,
+      product: "Krem Bio Kolagjen",
+      type: "Krem",
+      price: 4.99,
     },
     {
       id: 2,
       image: product2,
-      product: "Eucaliptus Oil",
-      type: "Oil",
-      price: 34.99,
+      product: "Vaj Eukalipti",
+      type: "Vaj",
+      price: 4.99,
     },
     {
       id: 3,
       image: product3,
-      product: "Hair Loss Spray",
-      type: "Spray",
-      price: 24.99,
+      product: "Spray Kundër Rënies së Flokëve",
+      type: "Sprej",
+      price: 7.99,
     },
     {
       id: 4,
       image: product4,
-      product: "Hand Cream",
-      type: "Cream",
-      price: 39.99,
+      product: "Krem për Duar",
+      type: "Krem",
+      price: 4.99,
     },
     {
       id: 5,
       image: product5,
-      product: "Mint Oil",
-      type: "Oil",
-      price: 35.99,
+      product: "Vaj Nenexhiku",
+      type: "Vaj",
+      price: 4.99,
     },
     {
       id: 6,
       image: product6,
-      product: "Veno Spray",
-      type: "Spray",
-      price: 69.99,
+      product: "Spray për shëndetin e venave",
+      type: "Sprej",
+      price: 4.99,
     },
   ];
 
@@ -104,10 +104,10 @@ const BestSeller = () => {
       <div className={styles.decorativeLine}></div>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <span className={styles.subtitle}>TRENDING NOW</span>
-          <h2 className={styles.title}>Our Best Sellers</h2>
+          <span className={styles.subtitle}>MË TË PËRZGJEDHURIT</span>
+          <h2 className={styles.title}>Produktet më të shitura</h2>
           <p className={styles.description}>
-            Discover our most popular skincare products loved by our customers
+            Zbuloni produktet tona më të preferuara nga klientët tanë
           </p>
         </div>
 
@@ -171,7 +171,7 @@ const BestSeller = () => {
                     <p className={styles.productType}>{item.type}</p>
                     <h3 className={styles.productName}>{item.product}</h3>
                     <div className={styles.priceRow}>
-                      <span className={styles.productPrice}>${item.price}</span>
+                      <span className={styles.productPrice}>{item.price}€</span>
                     </div>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ const BestSeller = () => {
         </div>
 
         <button className={styles.viewAllBtn} onClick={() => navigate('/products')}>
-          View All Products
+          Shiko të gjitha produktet
           <span className={styles.arrow}>→</span>
         </button>
       </div>

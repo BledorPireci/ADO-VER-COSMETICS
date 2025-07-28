@@ -81,7 +81,7 @@ const Products = () => {
         {displayedProducts.length === 0 ? (
           <div className={styles.noProducts}>
             <div className={styles.emptyStateIcon}>×</div>
-            <p>No products found in this category.</p>
+            <p>Nuk u gjetën produkte në këtë kategori.</p>
           </div>
         ) : (
           <div className={styles.productsGrid}>

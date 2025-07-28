@@ -55,7 +55,7 @@ const ProductCard = ({ product }) => {
               <span className={styles.price}>{product.price}€</span>
               
               <div className={styles.ingredients}>
-                <h4>Key Ingredients</h4>
+                <h4>Përbërësit Kryesorë</h4>
                 <ul>
                   {product.ingredients?.map((ingredient, index) => (
                     <li key={index}>{ingredient}</li>
