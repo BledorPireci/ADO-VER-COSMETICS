@@ -87,6 +87,7 @@ export const products = [
     price: 4.99,
     image: creamDarkSpot,
     description: "Krem për korrigjimin e njollave të errëta dhe ndriçimin e lëkurës",
+    ingredients: ["Bar Pezmi", "Kamomil", "Dyll i Bletës"]
   },
   {
     id: 7,

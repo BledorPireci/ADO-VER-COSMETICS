@@ -118,7 +118,7 @@ const HeroSection = () => {
             </div>
 
             <div className={`${styles.scrollPrompt} ${styles.hideOnMobile}`}>
-                <span>Lëviz</span>
+                <span>Scroll</span>
                 <div className={styles.scrollLine}>
                     <div 
                         className={styles.scrollDot} 
